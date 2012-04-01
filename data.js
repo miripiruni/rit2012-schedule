@@ -121,7 +121,7 @@ var talks = [
     },
     {
         "title"  : "Релиз-менеджмент в Badoo",
-        "author" : "Илья Агеев и Юрий Насретдинов, Badoo",
+        "author" : "Илья Агеев и Юрий Насретдинов, Badoo",
         "start"  : 1333360800000,
         "end"    : 1333363500000,
         "room"   : 1,
@@ -222,35 +222,81 @@ var talks = [
         "end" : 1333371600000,
         "room" : 3,
         "type" : "client-side"
+    },
+    {
+        "title"  : "Веб-выборы 2012 за 2012 часов",
+        "author" : "Анна Степанян и Александр Журавлев, Undev",
+        "start"  : 1333371600000,
+        "end"    : 1333373400000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "Кофе-брейк",
+        "author" : "",
+        "start"  : 1333371600000,
+        "end"    : 1333373400000,
+        "room"   : 2,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Кофе-брейк",
+        "author" : "",
+        "start"  : 1333371600000,
+        "end"    : 1333373400000,
+        "room"   : 3,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Окончательное решение вопроса трансляции видео в интернете",
+        "author" : "Максим Лапшин, Erlyvideo",
+        "start"  : 1333373400000,
+        "end"    : 1333376100000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "Интеграция сайта с облачным хранилищем",
+        "author" : "Александр Демидов, 1C-Битрикс",
+        "start"  : 1333373400000,
+        "end"    : 1333376100000,
+        "room"   : 2,
+        "type"   : ""
+    },
+    {
+        "title"  : "Проектирование iPad приложений для топ-менеджеров",
+        "author" : "Алексей Копылов, UI Design",
+        "start"  : 1333373400000,
+        "end"    : 1333376100000,
+        "room"   : 3,
+        "type"   : ""
+    },
+    {
+        "title"  : "Технологии Badoo — открытая встреча",
+        "author" : "",
+        "start"  : 1333376100000,
+        "end"    : 1333378800000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "Почему вам еще рано в облако",
+        "author" : "Станислав Богатырев, Clodo.ru",
+        "start"  : 1333376100000,
+        "end"    : 1333378800000,
+        "room"   : 2,
+        "type"   : ""
+    },
+    {
+        "title"  : "Патентование Internet-разработок",
+        "author" : "Михаил Радченко, SoftPatent",
+        "start"  : 1333376100000,
+        "end"    : 1333378800000,
+        "room"   : 3,
+        "type"   : ""
     }
-
-
 ];
-    //{
-        //"title" : "",
-        //"author" : "",
-        //"start" : ,
-        //"end" : ,
-        //"room" : 1,
-        //"type" : ""
-    //}
-    //{
-        //"title" : "",
-        //"author" : "",
-        //"start" : ,
-        //"end" : ,
-        //"room" : 1,
-        //"type" : ""
-    //}
 
-    //{
-        //"title" : "",
-        //"author" : "",
-        //"start" : ,
-        //"end" : ,
-        //"room" : 1,
-        //"type" : ""
-    //}
 
 inArray = Array.prototype.indexOf ?
     function (arr, val) {
@@ -536,18 +582,6 @@ var app = {
         if (fav) {
             document.getElementById('modes').className = '';
         }
-    //},
-
-    //listen : function (evnt, elem, func) {
-        //if (elem.addEventListener)  // W3C DOM
-            //elem.addEventListener(evnt,func,false);
-        //else if (elem.attachEvent) { // IE DOM
-             //var r = elem.attachEvent("on"+evnt, func);
-        //return r;
-        //}
-        //else {
-            //console.error('ups');
-        //}
     }
 };
 
