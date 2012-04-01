@@ -100,13 +100,17 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /*this for test*/
 /*only screen and (max-width: 800px) {*/
     body {
-        font-size:12px;
+        font-size:11px;
         }
 
     th,
     td {
         padding-left:5px;
         padding-right:5px;
+        }
+
+    footer {
+        font-size:11px;
         }
 
     #modes a {
