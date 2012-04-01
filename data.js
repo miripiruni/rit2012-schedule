@@ -241,7 +241,8 @@ var app = {
                 if (talks[n].id === this.favList[i].id) {
                     var talk = talks[n],
                     dtStart = new Date(talk.start),
-                    time = dtStart.getHours() + ':' + dtStart.getMinutes();
+                    m = dtStart.getMinutes() || '00',
+                    time = dtStart.getHours() + ':' + m;
                     this.fav += '' +
                         '<li>' +
                         '<span class="time">' + time + '</span>, ' +
@@ -308,7 +309,8 @@ var app = {
         var rowspan = this.getRowspan(talk),
             id = talk.id,
             dtStart = new Date(talk.start),
-            time = dtStart.getHours() + ':' + dtStart.getMinutes(),
+            m = dtStart.getMinutes() || '00',
+            time = dtStart.getHours() + ':' + m,
             ret = '<td class="talk room_' + talk.room + ' type_' + talk.type + '" rowspan="' + rowspan + '">' +
                         '<input type="checkbox" name="' + id + '" id="' + id + '" onchange="app.refreshFavorites(this.id)">' +
                         '<label for="' + id + '">' +
