@@ -1,16 +1,16 @@
 body {
-    padding:0;
     margin:0;
-    font: 16px/1.333 'Helvetica Nue', Arial, sans-serif;
-    color:#333;
+    padding:0;
     background:#eee;
+    color:#333;
     text-shadow:0 1px 1px #fff;
+    font: 16px/1.333 'Helvetica Nue', Arial, sans-serif;
     }
 
 h1 {
     text-align:center;
-    font-size:1.25em;
     font-weight:normal;
+    font-size:1.25em;
     }
 
 input {
@@ -19,15 +19,15 @@ input {
     }
 
 input:checked + label {
-    color:#000;
     background:yellow;
+    color:#000;
     }
 
 td {
-    vertical-align:top;
-    width:33.3%;
-    padding-left:20px;
     padding-right:20px;
+    padding-left:20px;
+    width:33.3%;
+    vertical-align:top;
     }
 
 th,
@@ -41,8 +41,8 @@ td {
 
 .timeline .time {
     position:absolute;
-    font-family:Consolas, monospace;
     font-size:13px;
+    font-family:Consolas, monospace;
     line-height:16px;
     }
 
@@ -62,9 +62,9 @@ td {
     }
     #modes a {
         margin: 0 10px;
-        text-decoration:none;
         border-bottom:1px solid silver;
         color:blue;
+        text-decoration:none;
         }
 
 .modes_hidden {
@@ -78,15 +78,15 @@ footer {
     font-size:12px;
     }
     footer a {
+            border-bottom:1px solid;
             color:gray;
             text-decoration:none;
-            border-bottom:1px solid;
             }
 
 #tip {
     display:none;
-    background:lightyellow;
     padding:10px;
+    background:lightyellow;
     }
 
 .show {
