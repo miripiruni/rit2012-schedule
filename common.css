@@ -109,16 +109,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
         padding-right:5px;
         }
 
-    #modes {
-        text-align:left;
+    #modes a {
+        display:inline-block;
+        padding:5px 8px;
+        background:#d5d5d5;
+        border:0;
+        border-radius:4px 4px 4px 4px;
         }
-        #modes a {
-            display:inline-block;
-            padding:5px 8px;
-            background:#d5d5d5;
-            border:0;
-            border-radius:4px 4px 4px 4px;
-            }
 
     .timeline input,
     .timeline .time {
