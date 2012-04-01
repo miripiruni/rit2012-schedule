@@ -128,6 +128,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
     .timeline .time {
         margin-left:5px;
+        font-size:inherit;
         }
 
     .timeline .author,
