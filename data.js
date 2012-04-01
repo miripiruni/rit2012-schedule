@@ -1,5 +1,77 @@
 var talks = [
     {
+        "title"  : "Growing in the Wild. The story by CUBRID Database Developers",
+        "author" : "Esen Sagynov, Eugene Stoyanovic",
+        "start"  : 1333347300000,
+        "end"    : 1333350000000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "Выбор подрядчика на IT-проекты: мечты заказчика и суровая реальность",
+        "author" : "Ольга Павлова, Usability Lab",
+        "start"  : 1333347300000,
+        "end"    : 1333350000000,
+        "room"   : 2,
+        "type"   : ""
+    },
+    {
+        "title"  : "Сетки для всего или как использовать чужие недостатки",
+        "author" : "Василий Аксёнов, СКБ Контур",
+        "start"  : 1333347300000,
+        "end"    : 1333350000000,
+        "room"   : 3,
+        "type"   : ""
+    },
+    {
+        "title"  : "Introduction to Riak",
+        "author" : "Ian Plosker",
+        "start"  : 1333350000000,
+        "end"    : 1333352700000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "О том, как меняется функция управления продуктом в компании при ее росте от стартапа до корпорации",
+        "author" : "Денис Бесков",
+        "start"  : 1333350000000,
+        "end"    : 1333352700000,
+        "room"   : 2,
+        "type"   : ""
+    },
+    {
+        "title"  : "Профилирование и оптимизация jQuery–кода",
+        "author" : "Владимир Журавлев, Evil Martians",
+        "start"  : 1333350000000,
+        "end"    : 1333352700000,
+        "room"   : 3,
+        "type"   : ""
+    },
+    {
+        "title"  : "Welcome to Write-Ahead Log",
+        "author" : "Heikki Olavi Linnakangas, PostgreSQL",
+        "start"  : 1333352700000,
+        "end"    : 1333355400000,
+        "room"   : 1,
+        "type"   : ""
+    },
+    {
+        "title"  : "Книга пяти колец. IT-прочтение",
+        "author" : "Евгения Фирсова, Яндекс.Деньги",
+        "start"  : 1333352700000,
+        "end"    : 1333355400000,
+        "room"   : 2,
+        "type"   : ""
+    },
+    {
+        "title"  : "Разработка сложного мультимедийного приложения на JavaScript+HTML5 и PhoneGap для iPad",
+        "author" : "Олег Неклюдов",
+        "start"  : 1333352700000,
+        "end"    : 1333355400000,
+        "room"   : 3,
+        "type"   : ""
+    },
+    {
         "title" : "10 практических советов о том, как нанять лучшего IT-специалиста",
         "author" : "Алена Владимирская, PRUFFI",
         "start" : 1333366200000,
