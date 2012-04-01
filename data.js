@@ -131,8 +131,8 @@ var app = {
     },
 
     showFav : function () {
-        var fav = this.getCookie('favorites'),
-            ordered = [];
+        var fav = this.getCookie('favorites');
+        this.favList = [];
         if (fav) {
             this.fav = '<ul class="fav">';
             if (fav.indexOf(',') !== -1) {
