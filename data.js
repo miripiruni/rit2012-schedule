@@ -101,7 +101,8 @@ inArray = Array.prototype.indexOf ?
 var app = {
     debug : false,
     timeline : '',
-    favList : '',
+    fav: '',
+    favList : [],
     timeStep : 900000,
     rooms : [ [], [], [] ],
     roomTitles : ['Главный зал', 'Зал 2', 'Зал 3'],
@@ -122,6 +123,7 @@ var app = {
     },
 
     showTimeline : function () {
+        this.favList = [];
         this.buildTimeline();
         this.drawTimeline();
         this.setFavsCheckboxes();
@@ -129,39 +131,54 @@ var app = {
     },
 
     showFav : function () {
-        var fav = this.getCookie('favorites');
+        var fav = this.getCookie('favorites'),
+            ordered = [];
         if (fav) {
-            this.favList = '<ul class="fav">';
+            this.fav = '<ul class="fav">';
             if (fav.indexOf(',') !== -1) {
                 fav = fav.split(',');
                for (var i=0; i < fav.length; i++) {
-                   this.buildFavItem(fav[i]);
+                   this.collectFavItem(fav[i]);
                }
             } else {
-                this.buildFavItem(fav);
+                this.collectFavItem(fav);
             }
-            this.favList+= '</ul>';
-            document.getElementById('content').innerHTML = this.favList;
+            this.favList.sort(function (a, b) {
+                return (a.start > b.start) ? 1 : ((b.start > a.start) ? -1 : 0);
+            });
+            this.buildFavItems();
+            this.fav+= '</ul>';
+            document.getElementById('content').innerHTML = this.fav;
         } else {
             //location.assign('index.html#');
         }
         return false;
     },
 
-    buildFavItem : function (fav) {
+    collectFavItem : function (fav) {
        for (var n = 0, l = talks.length; n < l; n++) {
            if (talks[n].id === fav) {
-                var talk = talks[n],
+               this.favList[this.favList.length] = talks[n];
+           }
+       }
+    },
+
+    buildFavItems : function () {
+        for (var i = 0, fl = this.favList.length; i < fl; i++) {
+            for (var n = 0, l = talks.length; n < l; n++) {
+                if (talks[n].id === this.favList[i].id) {
+                    var talk = talks[n],
                     dtStart = new Date(talk.start),
                     time = dtStart.getHours() + ':' + dtStart.getMinutes();
-                this.favList += '' +
-                    '<li>' +
-                    '<span class="time">' + time + '</span>, ' +
-                    '<span class="room">' + this.roomTitles[talk.room -1] + '</span>: ' +
-                    '<span class="title">' + talk.title + '</span> ' +
-                    '<span class="author">' + talk.author + '</span>' +
-                    '</li>';
-           }
+                    this.fav += '' +
+                        '<li>' +
+                        '<span class="time">' + time + '</span>, ' +
+                        '<span class="room">' + this.roomTitles[talk.room -1] + '</span>: ' +
+                        '<span class="title">' + talk.title + '</span> ' +
+                        '<span class="author">' + talk.author + '</span>' +
+                        '</li>';
+                }
+            }
        }
     },
 
