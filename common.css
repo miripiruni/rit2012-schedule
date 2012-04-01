@@ -19,7 +19,6 @@ input {
     }
 
 input:checked + label {
-    background:yellow;
     color:#000;
     }
 
@@ -98,16 +97,39 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
-    input,
-    .time {
+/*this for test*/
+/*only screen and (max-width: 800px) {*/
+    body {
+        font-size:14px;
+        }
+
+    th,
+    td {
+        padding-left:5px;
+        padding-right:5px;
+        }
+
+    #modes {
+        text-align:left;
+        }
+        #modes a {
+            display:inline-block;
+            padding:5px 8px;
+            background:#d5d5d5;
+            border:0;
+            border-radius:4px 4px 4px 4px;
+            }
+
+    .timeline input,
+    .timeline .time {
         position:static;
     }
 
-    input {
+    .timeline input {
         margin:0;
         }
 
-    .time {
+    .timeline .time {
         margin-left:5px;
         }
 
