@@ -64,7 +64,7 @@ var talks = [
         "type"   : ""
     },
     {
-        "title"  : "Разработка сложного мультимедийного приложения на JavaScript+HTML5 и PhoneGap для iPad",
+        "title"  : "Разработка сложного мульти<wbr>медийного приложения на JavaScript+HTML5 и PhoneGap для iPad",
         "author" : "Олег Неклюдов",
         "start"  : 1333352700000,
         "end"    : 1333355400000,
