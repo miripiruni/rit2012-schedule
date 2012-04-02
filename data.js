@@ -619,6 +619,12 @@ var app = {
     timeStep : 900000,
     rooms : [ [], [], [] ],
     roomTitles : ['Главный зал', 'Зал 2', 'Зал 3'],
+    // Cached references to DOM elements
+    dom : {
+        tip : document.getElementById('tip'),
+        modes : document.getElementById('modes'),
+        content : document.getElementById('content')
+    },
 
     init : function (data) {
         data = this.prepareData(data);
@@ -663,7 +669,7 @@ var app = {
             });
             this.buildFavItems();
             this.fav+= '</ul>';
-            document.getElementById('content').innerHTML = this.fav;
+            this.dom.content.innerHTML = this.fav;
         } else {
             //location.assign('index.html#');
         }
@@ -729,9 +735,8 @@ var app = {
                 }
             }
         } else {
-            var tip = document.getElementById('tip');
-            tip.className = 'show';
-            tip.innerHTML = 'Это неофициальная легкая, мобильная версия программы конференции РИТ++. Отметьте доклады, которые вам интересны и составьте свое расписание.';
+            this.dom.tip.className = 'show';
+            this.dom.tip.innerHTML = 'Это неофициальная легкая, мобильная версия программы конференции РИТ++. Отметьте доклады, которые вам интересны и составьте свое расписание.';
         }
     },
 
@@ -790,8 +795,8 @@ var app = {
         t.id = 'timeline';
         t.className = 'timeline';
         t.innerHTML = this.timeline;
-        document.getElementById('content').innerHTML = '';
-        document.getElementById('content').appendChild(t);
+        this.dom.content.innerHTML = '';
+        this.dom.content.appendChild(t);
     },
 
     logTime : function () {
@@ -839,7 +844,7 @@ var app = {
         this.setCookie('favorites2', fav, 10);
 
         if (fav !== '') {
-            document.getElementById('modes').className = '';
+            this.dom.modes.className = '';
         }
     },
 
@@ -855,7 +860,7 @@ var app = {
             this.setCookie('favorites2', fav, 10);
 
             if (fav === '') {
-                document.getElementById('modes').className = 'modes_hidden';
+                this.dom.modes.className = 'modes_hidden';
             }
         }
     },
@@ -881,7 +886,7 @@ var app = {
     initFavNav : function () {
         var fav = this.getCookie('favorites2');
         if (fav) {
-            document.getElementById('modes').className = '';
+            this.dom.modes.className = '';
         }
     }
 };
