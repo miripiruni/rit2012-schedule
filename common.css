@@ -56,6 +56,14 @@ td {
     margin-top:2px;
     }
 
+header {
+    text-align:center;
+    }
+
+.page-header {
+    display:inline-block;
+    }
+
 #modes {
     text-align:center;
     }
@@ -65,6 +73,9 @@ td {
         color:blue;
         text-decoration:none;
         }
+        #modes :target {
+            border:none;
+            }
 
 .modes_hidden {
     visibility:hidden;

@@ -297,6 +297,305 @@ var talks = [
     }
 ];
 
+// 3 april
+talks = [
+    {
+        "title"  : "Поиск на своем сайте, обзор open source решений",
+        "author" : "Алексей Рагозин",
+        "start"  : 1333433700000,
+        "end"    : 1333436400000,
+        "room"   : 1,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "История одной кнопки: b-form- button.css и b-form-button.js",
+        "author" : "Елена Глухова и Варвара Степанова, Яндекс",
+        "start"  : 1333433700000,
+        "end"    : 1333436400000,
+        "room"   : 2,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "Инструмент для нагрузочного тестирования Tsung",
+        "author" : "Артем Калантаи",
+        "start"  : 1333433700000,
+        "end"    : 1333436400000,
+        "room"   : 3,
+        "type"   : "qa"
+    },
+    {
+        "title"  : "Про качественный поиск",
+        "author" : "Андрей Аскетов, Sphinx",
+        "start"  : 1333436400000,
+        "end"    : 1333439100000,
+        "room"   : 1,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "Новая главная портала Mail.Ru",
+        "author" : "Егор Дыдыкин, Mail.ru",
+        "start"  : 1333436400000,
+        "end"    : 1333439100000,
+        "room"   : 2,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "Главные принципы A/B-<wbr>тестирования",
+        "author" : "Александр Шуркаев, Консультант-Плюс",
+        "start"  : 1333436400000,
+        "end"    : 1333438200000,
+        "room"   : 3,
+        "type"   : "qa"
+    },
+    {
+        "title"  : "DDоS: Практическое руководство к выживанию",
+        "author" : "Александр Лямин, Highload Lab",
+        "start"  : 1333439100000,
+        "end"    : 1333441800000,
+        "room"   : 1,
+        "type"   : "admin"
+    },
+    {
+        "title"  : "Префиксы. Зачем и как правильно.",
+        "author" : "Вадим Макеев, Opera",
+        "start"  : 1333439100000,
+        "end"    : 1333441800000,
+        "room"   : 2,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "Путь самурая. От скрама до канбана.",
+        "author" : "Евгений Кобзев и Александр Кудымов, СКБ Контур",
+        "start"  : 1333438200000,
+        "end"    : 1333440900000,
+        "room"   : 3,
+        "type"   : "manage"
+    },
+    {
+        "title"  : "Обед",
+        "author" : "",
+        "start"  : 1333441800000,
+        "end"    : 1333443600000,
+        "room"   : 1,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Семантика HTML5, вы тоже можете стать задротами",
+        "author" : "Брюс Лоусон, Opera",
+        "start"  : 1333441800000,
+        "end"    : 1333443600000,
+        "room"   : 2,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "Сбалан<wbr<wbr>сированная система показателей в Agile: KPI с человеским лицом",
+        "author" : "Борис Вольфсон, SoftLine",
+        "start"  : 1333440900000,
+        "end"    : 1333442700000,
+        "room"   : 3,
+        "type"   : "manage"
+    },
+    {
+        "title"  : "Эволюция CMS-систем: среда обитания и факторы выживания",
+        "author" : "Сергей Рыжиков, 1С-Битрикс",
+        "start"  : 1333444500000,
+        "end"    : 1333447200000,
+        "room"   : 1,
+        "type"   : "future-tech"
+    },
+    {
+        "title"  : "Ловим баги с помощью Opera Dragonfly",
+        "author" : "Патрик Лауке, Opera",
+        "start"  : 1333444500000,
+        "end"    : 1333447200000,
+        "room"   : 2,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "PHP-демоны",
+        "author" : "Денис Глазков, Badoo",
+        "start"  : 1333443600000,
+        "end"    : 1333445400000,
+        "room"   : 3,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "Микро<wbr>фреймворки на PHP",
+        "author" : "Андрей Синицын, Онтико",
+        "start"  : 1333445400000,
+        "end"    : 1333447200000,
+        "room"   : 3,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "GoDaddy.com Cloud Storage",
+        "author" : "Adam Knapp, GoDaddy",
+        "start"  : 1333447200000,
+        "end"    : 1333449900000,
+        "room"   : 1,
+        "type"   : "db"
+    },
+    {
+        "title"  : "Обед",
+        "author" : "",
+        "start"  : 1333447200000,
+        "end"    : 1333449900000,
+        "room"   : 2,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Обед",
+        "author" : "",
+        "start"  : 1333447200000,
+        "end"    : 1333449900000,
+        "room"   : 3,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "The next generation of Google APIs",
+        "author" : "Ade Oshineye, Google",
+        "start"  : 1333449900000,
+        "end"    : 1333452600000,
+        "room"   : 1,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "Про HA кластеры и нашу реализацию в tarantool",
+        "author" : "Юрий Востриков, Mail.ru",
+        "start"  : 1333449900000,
+        "end"    : 1333452600000,
+        "room"   : 2,
+        "type"   : "db"
+    },
+    {
+        "title"  : "Интернет в автомобиле",
+        "author" : "Павел Гужиков, RoundLake",
+        "start"  : 1333449900000,
+        "end"    : 1333452600000,
+        "room"   : 3,
+        "type"   : "future-tech"
+    },
+    {
+        "title"  : "Dependency Injection Explained",
+        "author" : "Zbigniew Lukasiak, Opera",
+        "start"  : 1333452600000,
+        "end"    : 1333455300000,
+        "room"   : 1,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "Использование Tarantool для хранения чатов и лент друзей",
+        "author" : "Константин Осипов, Mail.ru",
+        "start"  : 1333452600000,
+        "end"    : 1333455300000,
+        "room"   : 2,
+        "type"   : "db"
+    },
+    {
+        "title"  : "Ваши мобильные игры как платформа",
+        "author" : "Андрей Юношев, Game Insight",
+        "start"  : 1333452600000,
+        "end"    : 1333455300000,
+        "room"   : 3,
+        "type"   : "future-tech"
+    },
+    {
+        "title"  : "Новая Почта Рамблера",
+        "author" : "Андрей Шетухин, Рамблер-Афиша",
+        "start"  : 1333455300000,
+        "end"    : 1333458000000,
+        "room"   : 1,
+        "type"   : "server-side"
+    },
+    {
+        "title"  : "Денорма<wbr>лизованное хранение данных в PostgreSQL 9.2",
+        "author" : "Александр Коротков",
+        "start"  : 1333455300000,
+        "end"    : 1333458000000,
+        "room"   : 2,
+        "type"   : "db"
+    },
+    {
+        "title"  : "Практическое применение семантического анализа для фильтрации трафика",
+        "author" : "Яков Маркович и Михаил Волович, Ашманов и партнеры",
+        "start"  : 1333455300000,
+        "end"    : 1333458000000,
+        "room"   : 3,
+        "type"   : "future-tech"
+    },
+    {
+        "title"  : "Кофе-брейк",
+        "author" : "",
+        "start"  : 1333458000000,
+        "end"    : 1333459800000,
+        "room"   : 1,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Кофе-брейк",
+        "author" : "",
+        "start"  : 1333458000000,
+        "end"    : 1333459800000,
+        "room"   : 2,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Кофе-брейк",
+        "author" : "",
+        "start"  : 1333458000000,
+        "end"    : 1333459800000,
+        "room"   : 3,
+        "type"   : "gap"
+    },
+    {
+        "title"  : "Инженерный дзен. Непрерывные изменения.",
+        "author" : "Александр Титов, Skype",
+        "start"  : 1333459800000,
+        "end"    : 1333462500000,
+        "room"   : 1,
+        "type"   : "qa"
+    },
+    {
+        "title"  : "Распро<wbr>страненные ошибки применения баз данных",
+        "author" : "Сергей Аверин, Badoo",
+        "start"  : 1333459800000,
+        "end"    : 1333462500000,
+        "room"   : 2,
+        "type"   : "db"
+    },
+    {
+        "title"  : "На грани возможного. 3D, 2D, анимация и эмоции в веб c помощью CSS.",
+        "author" : "Антон Немцев",
+        "start"  : 1333459800000,
+        "end"    : 1333462500000,
+        "room"   : 3,
+        "type"   : "client-side"
+    },
+    {
+        "title"  : "Блиц-доклады",
+        "author" : "",
+        "start"  : 1333462500000,
+        "end"    : 1333465200000,
+        "room"   : 1,
+        "type"   : "short-talks"
+    },
+    {
+        "title"  : "Синхронная репликация БД: какая от неё польза?",
+        "author" : "Alex Yurchenko, Codership",
+        "start"  : 1333462500000,
+        "end"    : 1333465200000,
+        "room"   : 2,
+        "type"   : "db"
+    },
+    {
+        "title"  : "Вращай, двигай, загибай — практика 3D в вебе.",
+        "author" : "Андрей Ситник, Evil Martians",
+        "start"  : 1333462500000,
+        "end"    : 1333465200000,
+        "room"   : 3,
+        "type"   : "client-side"
+    }
+];
 
 inArray = Array.prototype.indexOf ?
     function (arr, val) {
@@ -326,9 +625,11 @@ var app = {
         this.buildRooms(data);
 
         this.initFavNav();
-        if(location.hash === '#favorites') {
+        if (location.hash === '#favorites') {
             this.showFav();
             return;
+        } else {
+            location.hash = '#all';
         }
 
         this.buildTimeline();
@@ -345,7 +646,7 @@ var app = {
     },
 
     showFav : function () {
-        var fav = this.getCookie('favorites');
+        var fav = this.getCookie('favorites2');
         this.favList = [];
         if (fav) {
             this.fav = '<ul class="fav">';
@@ -412,7 +713,7 @@ var app = {
     },
 
     setFavsCheckboxes : function() {
-        var fav = this.getCookie('favorites');
+        var fav = this.getCookie('favorites2');
         if (fav) {
             if (fav.indexOf(',')) {
                 fav = fav.split(',');
@@ -494,9 +795,9 @@ var app = {
     },
 
     logTime : function () {
-        var fDayStart = new Date('Mon Apr 02 2012 10:00:00 GMT+0400 (MSK)').getTime(),
-            fDayEnd = new Date('Mon Apr 02 2012 19:00:00 GMT+0400 (MSK)').getTime();
-        console.log('Rit starts at 2 apr, 10:00: ', fDayStart);
+        var fDayStart = new Date('Tue Apr 03 2012 10:00:00 GMT+0400 (MSK)').getTime(),
+            fDayEnd = new Date('Tue Apr 03 2012 19:00:00 GMT+0400 (MSK)').getTime();
+        console.log('Rit starts at 3 apr, 10:00: ', fDayStart);
         for (var time = fDayStart; fDayEnd >= time; time += this.timeStep) {
             var t = new Date(time),
             m = t.getMinutes() || '00';
@@ -526,7 +827,7 @@ var app = {
     },
 
     addFavorites : function (id) {
-        var fav = this.getCookie('favorites');
+        var fav = this.getCookie('favorites2');
         if (fav) {
             // если уже есть такой ключ в куках то ничего не делаем
             if (inArray(fav.split(','), id)) { return false; }
@@ -535,7 +836,7 @@ var app = {
             fav = '';
         }
         fav += id;
-        this.setCookie('favorites', fav, 10);
+        this.setCookie('favorites2', fav, 10);
 
         if (fav !== '') {
             document.getElementById('modes').className = '';
@@ -544,14 +845,14 @@ var app = {
 
     removeFavorites : function (id) {
         if (this.isFavorite(id)) {
-            var fav = this.getCookie('favorites');
+            var fav = this.getCookie('favorites2');
             if (fav.indexOf(id + ',') !== -1) {
                 id = id + ',';
             } else if (fav.indexOf(',' + id) !== -1) {
                 id = ',' + id;
             }
             fav = fav.replace(id, '');
-            this.setCookie('favorites', fav, 10);
+            this.setCookie('favorites2', fav, 10);
 
             if (fav === '') {
                 document.getElementById('modes').className = 'modes_hidden';
@@ -561,7 +862,7 @@ var app = {
 
     isFavorite : function (id) {
         var ret = false,
-            fav = this.getCookie('favorites'),
+            fav = this.getCookie('favorites2'),
             arr = fav.split(',');
         if (fav && inArray(arr, id)) {
             ret = true;
@@ -578,7 +879,7 @@ var app = {
     },
 
     initFavNav : function () {
-        var fav = this.getCookie('favorites');
+        var fav = this.getCookie('favorites2');
         if (fav) {
             document.getElementById('modes').className = '';
         }
